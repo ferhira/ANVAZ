@@ -1,0 +1,57 @@
+@import "_variables.scss";
+
+/* Analisis */
+
+
+/* Titulo */
+
+#Titulo {
+    background-image: linear-gradient( rgba(79, 31, 65, 0.6), rgb(125, 19, 59)), url("https://mentorpublico.com/wp-content/uploads/2020/08/work-5382501_1280.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 0%;
+    padding: 100px;
+}
+
+#Titulo h1 {
+    color: #FFFFFF;
+}
+
+
+/* Grilla */
+
+.row {
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5% 0 5% 0;
+}
+
+.card-img-top {
+    border-radius: 10px;
+}
+
+.card {
+    border-radius: 10px;
+}
+
+h5 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+button {
+    width: 200px;
+    padding: 0%;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    #Titulo {
+        padding: 50px;
+    }
+    .col {
+        padding: 0%;
+    }
+}

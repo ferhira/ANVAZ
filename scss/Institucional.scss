@@ -1,0 +1,142 @@
+@import "_variables.scss";
+
+/*Institucional*/
+
+#Titulo {
+    background-image: linear-gradient( rgba(79, 31, 65, 0.6), rgb(125, 19, 59)), url("https://anvazweb.com/wp-content/uploads/2021/02/paper-3213924_1920.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 0%;
+    padding: 100px;
+}
+
+h1 {
+    font-weight: 500;
+    color: $color-neutral;
+}
+
+article {
+    background-color: $color-background-secundario;
+}
+
+#Institucional {
+    @include flex-row-justify-evenly;
+    align-items: center;
+    padding: 40px 0px 40px 0px;
+    hr {
+        height: 3px;
+        background-color: $color-secundario;
+        width: 10%;
+        float: left;
+        border: none;
+    }
+    h2 {
+        text-align: left;
+        margin: 0px;
+        font-weight: 500;
+    }
+    p {
+        line-height: 2.4rem;
+    }
+    img {
+        width: 500px;
+    }
+    #Anvaz {
+        width: 40%;
+    }
+    #AnvazImg {
+        width: 40%;
+    }
+    #AnvazImg2 {
+        width: 40%;
+    }
+}
+
+.Valores {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 40px;
+    h3 {
+        margin: 0%;
+    }
+}
+
+.Valores__Box {
+    width: 25%;
+    text-align: center;
+    img {
+        width: 64px;
+    }
+}
+
+$i:( Misión: $color-secundario,
+Vision: $color-principal,
+Valores: $color-alternativo);
+@each $name-color,
+$bgcolor in $i {
+    .Valores__Box__Titulos-#{$name-color} {
+        color: $bgcolor;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 760px) {
+    #Titulo {
+        padding: 50px;
+    }
+    h1 {
+        font-size: 3.5rem;
+    }
+    h2 {
+        padding: 0 0 2% 2%;
+    }
+    hr {
+        margin-left: 2%;
+        padding: 0%;
+    }
+    #Institucional {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0px 0px 0px;
+        margin: 0%;
+        p {
+            padding: 10px;
+        }
+        img {
+            width: 100vw;
+        }
+        #Anvaz {
+            width: 100%;
+        }
+        #AnvazImg {
+            width: 100%;
+        }
+        #AnvazImg2 {
+            display: none;
+        }
+    }
+    .Valores {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 20px 10px 20px;
+    }
+    .Valores__Box {
+        width: 100%;
+        img {
+            width: 40px;
+        }
+    }
+}
+
+@media only screen and (min-width: 760px) and (max-width: 1200px) {
+    #Institucional {
+        justify-content: space-around;
+        padding: 20px 0px 20px 0px;
+        img {
+            width: 350px;
+        }
+    }
+}

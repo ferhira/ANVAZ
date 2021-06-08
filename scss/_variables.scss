@@ -1,0 +1,47 @@
+/*Paleta de Colores*/
+
+$color-principal: #900C3E;
+$color-secundario: #571846;
+$color-neutral:#FFFFFF;
+$color-alternativo:#ffc300;
+$color-nav:#272727;
+$color-sombras:#999;
+$color-texto:#000000;
+$color-texto-secundario:#2B2B2B;
+$color-background: #ffffff;
+$color-background-secundario: #F7F7F7;
+
+/*Tipografia*/
+
+$font-size-h1: 9rem;
+$font-size-h2: 4.5rem;
+$font-size-h3: 3rem;
+$font-size-h4: 2rem;
+$font-size-h5: 1.4rem;
+$font-size-p: 1.5rem;
+$font-weight-fino: 300;
+$font-weight-normal: 400;
+$font-weight-grueso: 500;
+
+/*Mixin*/
+
+@mixin flex-row-justify-evenly {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+@mixin button {
+    display: flex;
+    margin: auto;
+    padding: 10px;
+    border-style: solid;
+    color: $color-principal;
+    border-color: $color-principal;
+    background-color: $color-neutral;
+    border-radius: 20px;
+    &:hover {
+        background-color: $color-principal;
+        color: $color-neutral;
+    }
+}

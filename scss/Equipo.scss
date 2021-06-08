@@ -1,0 +1,145 @@
+@import "_variables.scss";
+
+/*Equipo*/
+
+#Titulo {
+    background-image: linear-gradient( rgba(79, 31, 65, 0.6), rgb(125, 19, 59)), url("https://anvazweb.com/wp-content/uploads/2021/03/rawpixel-558596-unsplash-copyright-min.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 0%;
+    padding: 100px;
+}
+
+h1 {
+    font-weight: 500;
+    color: $color-neutral;
+}
+
+.FundadorDirector {
+    h2 {
+        text-align: center;
+        margin: 3% 0 0 0;
+        padding: 0%;
+    }
+}
+
+#Fundador {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    margin: 0 5% 0 5%;
+    #Fundador1 {
+        margin: 3%;
+        img {
+            border-radius: 5%;
+        }
+    }
+    #Fundador2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 3%;
+        align-content: center;
+        h3 {
+            text-align: left;
+            color: $color-texto;
+            font-weight: 500;
+            font-style: oblique;
+            margin: 0px 0px 10px 0px;
+        }
+        h5 {
+            margin: 0px;
+        }
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 0 3% 3% 3%;
+}
+
+.Equipo__Box {
+    width: 250px;
+    background-color: $color-background-secundario;
+    border-radius: 0% 0% 5% 5%;
+    margin: 1%;
+    img {
+        width: 250px;
+        height: 250px;
+        border-radius: 5% 5% 0% 0%;
+    }
+    p {
+        padding: 15px;
+        margin: 0px;
+    }
+    h3 {
+        font-size: 2.4rem;
+        margin: 5px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .FundadorDirector {
+        margin: 0%;
+        h2 {
+            text-align: center;
+        }
+    }
+    #Fundador {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 4%;
+        #Fundador1 {
+            width: auto;
+            margin: 2%;
+        }
+        #Fundador2 {
+            width: auto;
+            margin: 2%;
+            h3 {
+                text-align: left;
+                color: $color-texto;
+                font-weight: 500;
+                font-style: oblique;
+                margin: 0px 0px 10px 0px;
+            }
+            h5 {
+                font-size: 1.6rem;
+                margin: 0px;
+            }
+        }
+    }
+    .Equipo__Box {
+        margin: 4%;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    #Titulo {
+        padding: 50px;
+    }
+    h1 {
+        padding: 1%;
+    }
+    #Fundador {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        margin: 0 5% 0 5%;
+        #Fundador1 {
+            display: flex;
+            justify-content: center;
+            margin: 3%;
+        }
+    }
+    .Equipo__Box {
+        margin-bottom: 35px;
+    }
+}

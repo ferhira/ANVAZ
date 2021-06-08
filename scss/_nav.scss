@@ -1,0 +1,112 @@
+/*Nav*/
+
+header {
+    display: block;
+    width: 100%;
+    height: 15%;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    .navegacion {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        color: $color-neutral;
+        background-color: $color-nav;
+        box-shadow: 10px 5px 5px $color-sombras;
+        .ImagenCabecera {
+            img {
+                display: flex;
+                width: 100px;
+                height: 100px;
+                box-shadow: 2px 2px 5px $color-sombras;
+                margin-bottom: -25px;
+            }
+        }
+    }
+    .navegacion {
+        ul {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            li {
+                a {
+                    display: flex;
+                    padding: 10px 30px 10px 30px;
+                }
+                &:hover {
+                    background-color: $color-neutral;
+                    color: $color-nav;
+                }
+            }
+            ul {
+                display: none;
+                position: absolute;
+                background-color: $color-nav;
+                padding: 0;
+            }
+            li {
+                width: 100%;
+                &:hover>ul {
+                    display: block;
+                    color: $color-neutral;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .navegacion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        ul {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            margin-top: 50px;
+            a {
+                display: flex;
+                padding: 10px 30px 10px 30px;
+            }
+            li:hover {
+                background-color: $color-background;
+                color: $color-nav;
+            }
+            ul {
+                display: none;
+                position: absolute;
+                background-color: $color-nav;
+                padding: 0;
+                li {
+                    width: 100%;
+                }
+            }
+            li:hover>ul {
+                display: block;
+                color: $color-nav;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .navegacion {
+        .ImagenCabecera {
+            display: none;
+        }
+        ul {
+            padding: 0%;
+            a {
+                display: flex;
+                padding: 8px;
+                font-size: 1.4rem;
+            }
+        }
+    }
+}

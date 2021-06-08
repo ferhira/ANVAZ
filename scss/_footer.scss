@@ -1,0 +1,55 @@
+/*Footer*/
+
+footer {
+    background-color: $color-principal;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    box-shadow: 10px 10px 5px 15px $color-sombras;
+    #DerechosReservados {
+        color: $color-neutral;
+        margin: auto
+    }
+    #RedesSociales {
+        margin: auto;
+        img {
+            width: 20px;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+    }
+    #TerminosYCondiciones {
+        padding: 15px;
+        margin: auto;
+        a {
+            padding-left: 10px;
+            text-decoration: none;
+            color: $color-neutral;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    footer {
+        a {
+            font-size: 1.4rem;
+        }
+        p {
+            font-size: 1.4rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    footer {
+        a {
+            font-size: 1.2rem;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+    }
+}

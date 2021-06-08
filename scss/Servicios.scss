@@ -1,0 +1,76 @@
+@import "_variables.scss";
+$card: 500px;
+
+/*Areas de Servicios*/
+
+#Titulo {
+    background-image: linear-gradient( rgba(79, 31, 65, 0.6), rgb(125, 19, 59)), url("https://image.freepik.com/foto-gratis/hombres-negocios-asiaticos-mujeres-negocios-que-reunen-intercambiar-ideas-sobre-aplicacion-planificacion-diseno-web-creativo-desarrollar-diseno-plantilla-proyectos-telefonos-moviles-que-trabajan-juntos-oficina-pequena_7861-2682.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 0%;
+    padding: 100px;
+}
+
+h1 {
+    font-weight: 500;
+    color: $color-neutral;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.Servicios {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+    .Servicios__Box {
+        width: 500px;
+        height: 520px;
+        background-color: $color-background-secundario;
+        border-radius: 5%;
+        margin: 25px;
+    }
+    img {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 500px;
+        height: auto;
+        border-radius: 5% 5% 0% 0%;
+    }
+    p {
+        margin: 5%;
+    }
+}
+
+@for $i from 1 through 4 {
+    .Servicios__Box-#{$i} {
+        width: 250px;
+    }
+}
+
+@each $titulo in titulo,
+subtitulo,
+parrafo {
+    .#{$titulo}-size {
+        font-size: 1rem*9;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    #Titulo {
+        padding: 50px;
+    }
+    .Servicios {
+        section {
+            width: 250px;
+            height: 450px;
+        }
+        img {
+            width: 250px;
+        }
+    }
+}
