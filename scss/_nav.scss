@@ -26,8 +26,6 @@ header {
                 margin-bottom: -25px;
             }
         }
-    }
-    .navegacion {
         ul {
             display: flex;
             flex-direction: row;
@@ -95,18 +93,18 @@ header {
     }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 768px) {
+@media only screen and (max-width: 360px) and (min-width: 768px) {
     .navegacion {
         .ImagenCabecera {
             display: none;
         }
         ul {
-            padding: 0%;
-            a {
-                display: flex;
-                padding: 1px;
-                font-size: 1.4rem;
-                margin: 0;
+            li {
+                padding: 0;
+                margin: 0%;
+                a {
+                    font-size: 1.2rem;
+                }
             }
         }
     }
