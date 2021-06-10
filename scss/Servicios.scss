@@ -65,12 +65,11 @@ parrafo {
         padding: 50px;
     }
     .Servicios {
-        section {
+        .Servicios__Box {
             width: 250px;
-            height: 450px;
-        }
-        img {
+            height: 350px;
+            img {
             width: 250px;
         }
     }
-}
+}}
