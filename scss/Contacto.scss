@@ -59,7 +59,13 @@ h3 {
             }
             input {
                 padding: 15px;
-                border: 4px;
+                border: 0.5px;
+                border-radius: 5px;
+                margin: 0 15px 0 15px;
+            }
+            textarea{
+                padding: 15px;
+                border: 0.5px;
                 border-radius: 5px;
                 margin: 0 15px 0 15px;
             }
