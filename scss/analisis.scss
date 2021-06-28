@@ -10,13 +10,23 @@
     background-size: cover;
     background-position: center;
     margin: 0%;
-    padding: 100px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #Titulo h1 {
-    color: #FFFFFF;
+    font-weight: 500;
+    color: $color-neutral;
+    padding: 0;
+    margin: 0;
 }
 
+main {
+    padding-top: 50px;
+}
 
 /* Grilla */
 
