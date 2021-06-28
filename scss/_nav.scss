@@ -15,14 +15,15 @@ header {
         justify-content: space-around;
         align-items: center;
         color: $color-neutral;
-        background-color: $color-nav;
-        box-shadow: 10px 5px 5px $color-sombras;
+        background-image: linear-gradient(to right, #434343 0%, black 100%);
+        box-shadow: 0 1px 15px $color-principal;
+
         .ImagenCabecera {
             img {
                 display: flex;
                 width: 100px;
                 height: 100px;
-                box-shadow: 2px 2px 5px $color-sombras;
+                box-shadow: 0 1px 4px rgb(245, 245, 245);
                 margin-bottom: -25px;
             }
         }
@@ -43,7 +44,7 @@ header {
             ul {
                 display: none;
                 position: absolute;
-                background-color: $color-nav;
+                background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
                 padding: 0;
             }
             li {
