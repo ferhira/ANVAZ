@@ -70,7 +70,7 @@ header {
             display: flex;
             flex-direction: row;
             list-style: none;
-            margin-top: 50px;
+            margin-top: 15px;
             a {
                 display: flex;
                 padding: 10px 30px 10px 30px;
@@ -100,6 +100,9 @@ header {
     .navegacion {
         .ImagenCabecera {
             display: none;
+        }
+        ul {
+            margin-top: 15px;
         }
         .navegacion__nav a {
             padding: 5px;

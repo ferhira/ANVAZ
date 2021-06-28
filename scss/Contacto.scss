@@ -166,3 +166,8 @@ p {
         }
     }
 }
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    #Titulo {
+        height: 50vh;
+    }
+}
