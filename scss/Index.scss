@@ -261,6 +261,11 @@ h1 {
     h3 {
         font-size: 2rem;
     }
+
+    .carousel-inner p {
+        font-size: 1.4rem;
+    }
+
     .QuienesSomos {
         margin: 10px;
         p {
@@ -279,16 +284,10 @@ h1 {
             }
         }
     }
-    .Empresas {
-        img {
-            display: inline-flex;
-            vertical-align: middle;
-            width: 70px;
-            margin: 20px;
-        }
-    }
+
     .Seccion__Servicios {
-        height: 1200px;}
+        height: 1300px;
+    }
     .Servicios {
         section {
             width: 200px;
@@ -302,7 +301,16 @@ h1 {
             width: 200px;
         }
     }
-    .carousel-inner p {
-        font-size: 1.4rem;
+
+    .Seccion__Empresas{
+        .Empresas {
+            img {
+                display: inline-flex;
+                vertical-align: middle;
+                width: 70px;
+                margin: 0px;
+                padding: 0%;
+            }
+        }
     }
 }
