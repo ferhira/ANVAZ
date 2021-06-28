@@ -33,22 +33,46 @@ h3 {
 .Contactenos__Box1 {
     width: 40%;
     height: 500px;
-    grid-area: "contacto";
     padding: 15px;
-    margin: 2%;
-    border-radius: 25px;
-    .Contactenos__Box1__Informacion {
-        background-color: $color-background-secundario;
+    margin: 0 0 0 10%;
+    .Contactenos__Box__Informacion {
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        border-style: solid;
+        border-color: #ebebeb;
+        border-width: .5px;
+        box-shadow: 0 0 5px 5px rgb(202, 202, 202);
+        .Contactenos__Box1__Informacion {
+                display: flex;
+                flex-direction: column;
+                justify-content:flex-start;
+                padding: 20px;
+                    h4, p {
+                        padding: 5px;
+                        margin: 0;
+                        font-weight: 300;
+                    }
+            }
+        .Contactenos__Box2__Informacion {
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+                h4, p {
+                        padding: 5px;
+                        margin: 0;
+                        font-weight: 300;
+                    }
+        }
     }
+    
 }
 
 .Contactenos__Box2 {
-    width: 60%;
+    width: 40%;
     height: 500px;
-    grid-area: "mensaje";
     padding: 15px;
-    margin: 2%;
-    border-radius: 25px;
+    margin: 0 10% 0 0;
     .Contactanos__Box2__Formulario {
         form {
             display: flex;
@@ -56,25 +80,26 @@ h3 {
             input {
                 box-sizing: border-box;
                 padding: 12px;
-                border: 5px;
-                border-color: $color-background-secundario;
-                border-radius: 15px;
-                width: 600px;
+                border-style:solid;
+                border-color: rgba(234,234,234,0.8);
+                border-radius: 10px;
+                width: 500px;
                 margin: auto;
                 outline: none;
+                border-width: 1px;
             }
             textarea{
                 box-sizing: border-box;
                 height: 75px;
                 font-family: 'Poppins', sans-serif;
-                padding: 2px;
-                border: 5px;
-                border-radius: 15px;
-                border-color: $color-background-secundario;
-                width: 600px;
+                padding: 12px;
+                border-radius: 10px;
+                border-color: rgba(234,234,234,0.8);
+                width: 500px;
                 margin: auto;
                 resize: none;
                 outline: none;
+                border-width: 1px;
             }
             .Contactenos__Box2__Formulario__Submit {
                 background-color: white;
