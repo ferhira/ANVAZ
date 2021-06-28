@@ -7,12 +7,18 @@
     background-size: cover;
     background-position: center;
     margin: 0%;
-    padding: 100px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
     font-weight: 500;
     color: $color-neutral;
+    padding: 0;
+    margin: 0;
 }
 
 h2 {
