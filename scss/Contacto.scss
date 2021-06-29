@@ -170,4 +170,20 @@ p {
     #Titulo {
         height: 50vh;
     }
+    .Contactenos__Box2{
+        width: 90%;
+        height: 500px;
+        padding: 0px;
+        margin: 0;
+        .Contactanos__Box2__Formulario{ 
+            form {
+                input {
+                    width:90%;
+                }
+                textarea {
+                    width: 90%;
+                }
+            }
+        }
+    }
 }
