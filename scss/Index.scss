@@ -271,12 +271,14 @@ h1 {
     .QuienesSomos {
         margin: 10px;
         p {
-            padding: 1rem;
+            padding: 0;
             font-size: 1.3rem;
         }
         .QuienesSomos__Imagen {
+            height: 200px;
             img {
-                width: 240px;
+                width: 250px;
+                height: 150px;
                 margin: 20px auto 20px auto;
             }
         }
@@ -284,6 +286,7 @@ h1 {
             h1 {
                 font-size: 4rem;
             }
+            padding: 20px;
         }
     }
 
