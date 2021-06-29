@@ -170,6 +170,11 @@ p {
     #Titulo {
         height: 50vh;
     }
+    .Contactenos {
+        flex-direction: row;
+        justify-self: center;
+        width: 100%;
+    }
     .Contactenos__Box1 {
         width: 40%;
         height: 250px;
